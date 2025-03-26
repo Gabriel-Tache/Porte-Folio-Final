@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ReMarket - Produits Reconditionnés</title>
+  <link rel="stylesheet" href="Product-Revente.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-left">
+      <div class="logo">🛍️ ReMarket</div>
+      <button class="revendre-btn">Revendre</button>
+      <button class="revendre-btn" onclick="window.location.href='Home - Copie.html'">Home</button>
+    </div>
+
+    <input type="text" placeholder="Rechercher un produit..." id="searchBar" />
+    <div class="menu">
+      <a href="#" class="se-connecter">Se connecter</a>
+    </div>
+  </header>
+  <main>
+    <section class="form-container">
+      <h2>📦 Estimez la reprise de votre produit Apple</h2>
+    
+      <form id="estimationForm">
+        <label for="produit">Produit :</label>
+        <select id="produit" required>
+          <option value="">-- Choisissez un produit --</option>
+          <option value="iphone">iPhone</option>
+          <option value="ipad">iPad</option>
+          <option value="macbook">MacBook</option>
+          <option value="imac">iMac</option>
+          <option value="watch">Apple Watch</option>
+          <option value="airpods">AirPods</option>
+        </select>
+    
+        <label for="modele">Modèle :</label>
+        <select id="modele" required>
+          <option value="">-- Sélectionnez un produit d'abord --</option>
+        </select>
+    
+        <label for="capacite">Capacité :</label>
+        <select id="capacite" required>
+          <option value="">-- Sélectionnez un produit d'abord --</option>
+        </select>
+    
+        <label for="etat">État :</label>
+        <select id="etat" required>
+          <option value="">-- Sélectionnez l'état --</option>
+          <option value="comme-neuf">Comme neuf</option>
+          <option value="bon">Bon</option>
+          <option value="moyen">Moyen</option>
+          <option value="abime">Abîmé</option>
+        </select>
+    
+        <button type="submit">💰 Estimer</button>
+      </form>
+    
+      <div id="estimationResult" class="estimation-badge">
+        💬 Veuillez remplir le formulaire pour obtenir une estimation.
+      </div>
+    </section>
+    
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ReMarket - All rights reserved.</p>
+  </footer>
+
+  <script src="Product-Revente-API.js"></script>
+</body>
+</html>
